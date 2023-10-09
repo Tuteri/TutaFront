@@ -1,0 +1,48 @@
+$dark-bgcolor: var(--van-nav-bar-background);
+$dark-color: #f5f5f5;
+$dark-border-color: var(--van-border-color);
+
+.van-theme-dark {
+  @import './highlight-dark.scss';
+  body {
+    color: $dark-color;
+    background-color: #111;
+  }
+
+  .footer-fixed {
+    background-color: $dark-bgcolor;
+    border-top: 1px solid $dark-border-color;
+  }
+
+  .van-icon {
+    --van-nav-bar-icon-color: $dark-color;
+
+
+  }
+
+  .chat-wrapper {
+    .chat-row-reverse {
+      .n-avatar {
+        color: $dark-bgcolor;
+        background-color: rgba(204, 204, 204, 1);
+      }
+    }
+
+    .chat-time {
+      color: rgb(180 187 196);
+    }
+
+    .chat-text-words {
+      background: $dark-bgcolor;
+    }
+  }
+
+  .markdown-body {
+    color: $dark-color;
+
+    .code-block-wrapper {
+      background: #282c34;
+    }
+  }
+
+}

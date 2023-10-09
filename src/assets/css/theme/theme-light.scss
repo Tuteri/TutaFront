@@ -1,0 +1,48 @@
+$light-bgcolor: #fff;
+$light-color: #111;
+$light-border-color: var(--van-border-color);
+
+.van-theme-light {
+  @import './highlight-light.scss';
+
+  body {
+    color: $light-color;
+    // background-color: #f5f5f5;
+  }
+
+  .footer-fixed {
+    background-color: $light-bgcolor;
+    border-top: 1px solid $light-border-color;
+  }
+
+  .van-icon {
+    --van-nav-bar-icon-color: $light-color;
+
+  }
+
+  .chat-wrapper {
+    .chat-row-reverse {
+
+      .n-avatar {
+        color: $light-bgcolor;
+        background-color: rgba(204, 204, 204, 1);
+      }
+    }
+
+    .chat-time {
+      color: rgb(180 187 196);
+    }
+
+    .chat-text-words {
+      background: #F6F8FA;
+    }
+  }
+
+  .markdown-body {
+    color: $light-color;
+
+    .code-block-wrapper {
+      background: $light-bgcolor;
+    }
+  }
+}
